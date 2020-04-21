@@ -8,8 +8,8 @@ def featureNormalization(X):
 
     np.std(A)==> returns the standard deviation of the elements of A
     """
-    mean=
-    std=
+    mean=np.mean(X)
+    std=np.std(X)
     
     X_norm = (X - mean)/std
     
