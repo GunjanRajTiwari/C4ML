@@ -28,15 +28,15 @@ input("Press enter if you have completed computeCost file, else Ctrl+C then ente
 
 
 
-# '''Functions defined in other files will be imported here'''
+'''Functions defined in other files will be imported here'''
 
-# from computeCost import computeCost
-# from gradientDescent import gradientDescent
+from computeCost import computeCost
+from gradientDescent import gradientDescent
 
 
-# J= computeCost(X,y,theta)                                   #calling function computeCost from computeCost.py file
-# print('Cost function J value :',J)
-# input("Press enter if you have completed gradient descent file, else Ctrl+C then enter to exit")
-# theta = gradientDescent(X, y, theta, alpha, iterations)     #calling function gradientDescent from gradientDescent.py file
-# J= computeCost(X,y,theta)
-# print('New Cost function value:',J)
+J= computeCost(X,y,theta)                                   #calling function computeCost from computeCost.py file
+print('Cost function J value :',J)
+input("Press enter if you have completed gradient descent file, else Ctrl+C then enter to exit")
+theta = gradientDescent(X, y, theta, alpha, iterations)     #calling function gradientDescent from gradientDescent.py file
+J= computeCost(X,y,theta)
+print('New Cost function value:',J)
