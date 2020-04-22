@@ -9,8 +9,8 @@ def gradientDescent(X,y,theta,alpha,num_iters):
     """
     m=len(y)
     for i in range(num_iters):
-        predictions =
-        error = 
+        predictions = np.dot(X,theta)
+        error = predictions-y
         descent=alpha * 1/m * error
         theta= theta-descent
         if(i%100==0):
