@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt                             # used for visualizi
 
 
 
-data = pd.read_csv('E:\ML-Exercises--master\Week2\ex1data1.txt', header=None)             # read from dataset
+data = pd.read_csv('ex1data1.txt', header=None)             # read from dataset
 X = data.iloc[:, 0]                                         # read first column, automatically as a numpy array
 y = data.iloc[:, 1]                                         # read second column
 m = len(y)                                                  # number of training example
